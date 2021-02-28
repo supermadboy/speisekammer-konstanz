@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -12,11 +13,26 @@ module.exports = {
     compress: true,
     port: 9000,
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'src/views/layouts/index.hbs',
+    }),
+  ],
   module: {
     rules: [
       {
         test: /\.(scss|css)$/,
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+      },
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader',
+        options: {
+          partialDirs: [
+            path.join(__dirname, 'src', 'views', 'partials'),
+          ],
+        },
       },
     ],
   },
