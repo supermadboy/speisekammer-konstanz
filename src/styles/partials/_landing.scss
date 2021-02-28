@@ -1,11 +1,128 @@
 .landing {
   position: relative;
 
+  &__header {
+    padding-bottom: 2rem;
+    padding-top: 9rem;
+  }
+
+  &__subheader {
+    padding-bottom: 1rem;
+  }
+
+  &__subheadertext {
+    padding-bottom: 10rem;
+  }
+
   &__background {
-    background: url('../assets/images/svg/kritzel1.svg');
+    background-image: url('../assets/images/svg/kritzel1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 80%;
     position: absolute;
     width: 100%;
+    z-index: -1;
+  }
+
+  &__logo {
+    background-size: contain;
+    height: 6.25rem;
+    left: 1.25rem;
+    position: absolute;
+    top: 1.25rem;
+    width: 4.375rem;
+    z-index: -1;
+
+    &.spring {
+      background-image: url('../assets/images/svg/logo_spring.svg');
+    }
+
+    &.summer {
+      background-image: url('../assets/images/svg/logo_summer.svg');
+    }
+
+    &.autumn {
+      background-image: url('../assets/images/svg/logo_autumn.svg');
+    }
+
+    &.winter {
+      background-image: url('../assets/images/svg/logo_winter.svg');
+    }
+  }
+
+  &__plum {
+    background-image: url('../assets/images/svg/plum.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 3.125rem;
+    left: 50%;
+    position: absolute;
+    top: 2.5rem;
+    width: 4.0625rem;
+    z-index: -1;
+  }
+
+  &__grape {
+    background-image: url('../assets/images/svg/grape.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 7.2rem;
+    position: absolute;
+    right: 2rem;
+    top: 7.5rem;
+    transform: rotate(22deg);
+    width: 4.0625rem;
+    z-index: -1;
+  }
+
+  &__raspberry {
+    background-image: url('../assets/images/svg/raspberry.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 39.875rem;
+    left: 1rem;
+    position: absolute;
+    top: 11rem;
+    width: 2.8125rem;
+    z-index: -1;
+  }
+
+  &__quince {
+    background-image: url('../assets/images/svg/quince.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 3.5625rem;
+    position: absolute;
+    right: -2rem;
+    top: 18rem;
+    transform: rotate(-32deg);
+    width: 4.6875rem;
+    z-index: -1;
+  }
+
+  &__carrot {
+    background-image: url('../assets/images/svg/carrot.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 11.3125rem;
+    left: 1.5rem;
+    position: absolute;
+    top: 25rem;
+    transform: rotate(109deg);
+    width: 3.1875rem;
+    z-index: -1;
+  }
+
+  &__leek {
+    background-image: url('../assets/images/svg/leek.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 9.6875rem;
+    position: absolute;
+    right: -1rem;
+    top: 27rem;
+    transform: rotate(-55deg);
+    width: 3.9375rem;
     z-index: -1;
   }
 }
