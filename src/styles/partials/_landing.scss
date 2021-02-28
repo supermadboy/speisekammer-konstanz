@@ -1,0 +1,11 @@
+.landing {
+  position: relative;
+
+  &__background {
+    background: url('../assets/images/svg/kritzel1.svg');
+    height: 80%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+}

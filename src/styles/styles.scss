@@ -1,5 +1,7 @@
+@import './_normalize.css';
 @import './colors';
+@import './fonts';
 
-html {
-  background-color: $red;
-}
+@import './globals';
+
+@import './partials/partials';
