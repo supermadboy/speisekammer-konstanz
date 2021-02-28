@@ -1,4 +1,9 @@
 import './styles/styles.scss';
+import $ from 'jquery'
+
+import 'slick-carousel';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function getCurrentSeason () {
   var currentDate = new Date();
@@ -32,4 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   var currentSeason = getCurrentSeason();
   logo.classList.add(currentSeason);
+});
+
+$('.landing__slider').slick({
+  autoplay: true,
+  autoplaySpeed: 5000,
+  speed: 800,
+  arrows: false,
 });
