@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -18,12 +20,20 @@ module.exports = {
       filename: 'index.html',
       template: 'src/views/layouts/index.hbs',
     }),
+    new MiniCssExtractPlugin(),
   ],
+  optimization: {
+    minimize: true,
+    minimizer: [
+      `...`,
+      new CssMinimizerPlugin(),
+    ]
+  },
   module: {
     rules: [
       {
         test: /\.(scss|css)$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
         test: /\.hbs$/,
