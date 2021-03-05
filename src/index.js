@@ -57,3 +57,9 @@ $('.participate__slider').slick({
   arrows: false,
   dots: true,
 });
+
+$('.producers__slider').slick({
+  speed: 800,
+  arrows: false,
+  dots: true,
+});
