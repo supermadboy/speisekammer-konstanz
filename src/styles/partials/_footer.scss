@@ -1,0 +1,31 @@
+.footer {
+  &__background {
+    background-image: url('../assets/images/svg/kritzel5.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__newsletter {
+    &-title {
+
+    }
+  }
+
+  &__mail {
+
+  }
+
+  &__links {
+    .facebook {
+
+    }
+
+    .instagram {
+
+    }
+  }
+}
