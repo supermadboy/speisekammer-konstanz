@@ -45,3 +45,9 @@ $('.landing__slider').slick({
   speed: 800,
   arrows: false,
 });
+
+$('.steps__slider').slick({
+  speed: 800,
+  arrows: false,
+  dots: true,
+});

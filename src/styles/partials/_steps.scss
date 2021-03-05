@@ -1,0 +1,66 @@
+.steps {
+  padding-bottom: 4rem;
+
+  &__background {
+    background-image: url('../assets/images/svg/kritzel2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__about {
+    color: $green-dark;
+    margin-top: 4rem;
+  }
+
+  &__statute {
+    margin-top: 2rem;
+
+    a {
+      color: $black;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+
+  &__slider {
+    padding-top: 4rem;
+
+    .slide {
+      &__content {
+        padding-top: 2rem;
+      }
+
+      &__header {
+        margin-bottom: 2rem;
+      }
+
+      &__text {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .background {
+      background-repeat: no-repeat;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+
+      &-1 {
+        background-image: url('../assets/images/svg/pitchforks.svg');
+      }
+
+      &-2 {
+        background-image: url('../assets/images/svg/hands.svg');
+      }
+
+      &-3 {
+        background-image: url('../assets/images/svg/forks.svg');
+      }
+    }
+  }
+}

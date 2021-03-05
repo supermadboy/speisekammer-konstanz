@@ -30,3 +30,33 @@ h3 {
 .text-center {
   text-align: center;
 }
+
+.padding-v-s {
+  padding: 0 1.5rem;
+}
+
+.padding-v-m {
+  padding: 0 3rem;
+}
+    
+/* stylelint-disable */
+.slick-slider {
+  .slick-dots {
+    bottom: -35px;
+  
+    li {
+      height: 30px;
+      width: 30px;
+  
+      button:before {
+        font-size: 30px;
+      }
+  
+      &.slick-active {
+        button:before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

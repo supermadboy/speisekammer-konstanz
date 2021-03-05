@@ -14,6 +14,11 @@
     padding-bottom: 10rem;
   }
 
+  &__slider {
+    color: $green-dark;
+    padding-bottom: 2rem;
+  }
+
   &__background {
     background-image: url('../assets/images/svg/kritzel1.svg');
     background-repeat: no-repeat;
