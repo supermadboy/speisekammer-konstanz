@@ -51,3 +51,9 @@ $('.steps__slider').slick({
   arrows: false,
   dots: true,
 });
+
+$('.participate__slider').slick({
+  speed: 800,
+  arrows: false,
+  dots: true,
+});

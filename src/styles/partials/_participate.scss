@@ -1,0 +1,36 @@
+.participate {
+  padding-bottom: 4rem;
+
+  &__background {
+    background-image: url('../assets/images/svg/kritzel3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__about {
+    color: $green-dark;
+    margin-top: 4rem;
+  }
+
+  &__slider {
+    padding-top: 4rem;
+
+    .slide {
+      &__content {
+        padding-top: 2rem;
+      }
+
+      &__header {
+        margin-bottom: 2rem;
+      }
+
+      &__text {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
