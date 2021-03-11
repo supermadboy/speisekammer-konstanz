@@ -1,6 +1,8 @@
 .footer {
+  position: relative;
+
   &__background {
-    background-image: url('../assets/images/svg/kritzel5.svg');
+    background-image: url('../assets/images/svg/background.svg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 80%;
@@ -9,23 +11,165 @@
     z-index: -1;
   }
 
+  &__broccoli {
+    background-image: url('../assets/images/svg/broccoli.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 6rem;
+    left: -1rem;
+    position: absolute;
+    top: 0;
+    transform: rotate(32deg);
+    width: 5rem;
+    z-index: -1;
+  }
+
+  &__grape {
+    background-image: url('../assets/images/svg/grape.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 7.2rem;
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    transform: rotate(-10deg);
+    width: 4.0625rem;
+    z-index: -1;
+  }
+
+  &__raspberry {
+    background-image: url('../assets/images/svg/raspberry.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 3.9875rem;
+    left: 1rem;
+    position: absolute;
+    top: 50%;
+    width: 2.8125rem;
+    z-index: -1;
+  }
+
+  &__salad {
+    background-image: url('../assets/images/svg/salad.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 5rem;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: rotate(26deg);
+    width: 5rem;
+    z-index: -1;
+  }
+
+  &__carrot {
+    background-image: url('../assets/images/svg/carrot.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 2rem;
+    height: 11.3125rem;
+    left: 1.5rem;
+    position: absolute;
+    transform: rotate(32deg);
+    width: 3.1875rem;
+    z-index: -1;
+  }
+
+  &__corn {
+    background-image: url('../assets/images/svg/corn.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 2rem;
+    height: 8rem;
+    position: absolute;
+    right: -2rem;
+    transform: rotate(-33deg);
+    width: 4rem;
+    z-index: -1;
+  }
+
   &__newsletter {
     &-title {
+      margin-bottom: 3rem;
+    }
 
+    &-text {
+      margin-bottom: 2rem;
+    }
+
+    &-input {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 8rem;
+
+      input {
+        border-color: $black;
+        border-radius: 3rem;
+        height: 3rem;
+        margin: 0 1.5rem 1rem;
+        padding: 0 1.5rem;
+        width: calc(100% - 6rem);
+      }
+
+      button {
+        width: 6rem;
+      }
+    }
+
+    &-subtitle {
+      margin-bottom: 1rem;
+      text-align: center;
     }
   }
 
   &__mail {
+    display: flex;
+    margin-bottom: 6rem;
 
+    &::before {
+      background-image: url('../assets/images/svg/mail.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      display: block;
+      height: 2rem;
+      margin-right: 0.5rem;
+      width: 2rem;
+    }
+
+    a {
+      color: $black;
+      text-decoration: none;
+    }
   }
 
   &__links {
-    .facebook {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-    }
+    .socialmedia {
+      display: flex;
 
-    .instagram {
-
+      &__facebook {
+        background-image: url('../assets/images/svg/facebook.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        height: 2rem;
+        margin-right: 1rem;
+        width: 2rem;
+      }
+  
+      &__instagram {
+        background-image: url('../assets/images/svg/instagram.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        height: 2rem;
+        width: 2rem;
+      }
     }
   }
 }
