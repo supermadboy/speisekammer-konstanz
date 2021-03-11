@@ -4,6 +4,11 @@
 
 html {
   background-color: $green-light;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 p {

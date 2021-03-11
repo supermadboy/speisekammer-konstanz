@@ -5,9 +5,16 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: {
+    index: {
+      import: './src/index.js',
+    },
+    slick: {
+      import: './src/slick.js',
+    },
+  },
   output: {
-    filename: 'main.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
@@ -37,12 +44,16 @@ module.exports = {
       },
       {
         test: /\.hbs$/,
-        loader: 'handlebars-loader',
-        options: {
-          partialDirs: [
-            path.join(__dirname, 'src', 'views', 'partials'),
-          ],
-        },
+        use: [
+          {
+            loader: 'handlebars-loader',
+            options: {
+              partialDirs: [
+                path.join(__dirname, 'src', 'views', 'partials'),
+              ],
+            },
+          },
+        ],
       },
       {
         test: /\.svg/,
@@ -56,6 +67,9 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+            }
           },
         ],
       },
