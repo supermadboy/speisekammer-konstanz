@@ -31,7 +31,7 @@
 
     .slide {
       position: relative;
-
+      
       &__content {
         padding-top: 2rem;
       }
@@ -47,25 +47,60 @@
 
     .background {
       background-repeat: no-repeat;
+      height: 9rem;
       position: absolute;
+      width: 9rem;
       z-index: -1;
 
       &-1 {
         background-image: url('../assets/images/svg/pitchfork.svg');
-        height: 5.2rem;
-        width: 9.5rem;
       }
 
       &-2 {
         background-image: url('../assets/images/svg/hand.svg');
-        height: 6.2rem;
-        width: 8.43rem;
       }
 
       &-3 {
         background-image: url('../assets/images/svg/fork.svg');
-        height: 4.6rem;
-        width: 7.8rem;
+      }
+
+      &-a {
+        left: -2rem;
+        transform: rotate(-45deg);
+      }
+
+      &-b {
+        right: -2rem;
+        transform: rotate(-25deg);
+      }
+
+      &-c {
+        left: -2rem;
+        top: 30%;
+        transform: rotate(45deg);
+      }
+
+      &-d {
+        right: -4rem;
+        top: 50%;
+        transform: rotate(114deg);
+      }
+
+      &-e {
+        bottom: 0;
+        transform: rotate(-60deg);
+      }
+
+      &-f {
+        bottom: 0;
+        left: 2rem;
+        transform: rotate(-30deg);
+      }
+
+      &-g {
+        bottom: 5rem;
+        right: 0;
+        transform: rotate(80deg);
       }
     }
   }
