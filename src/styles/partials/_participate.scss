@@ -1,13 +1,15 @@
 .participate {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+  position: relative;
 
   &__background {
     background-image: url('../assets/images/svg/background.svg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 80%;
+    left: -2.5rem;
     position: absolute;
-    width: 100%;
+    right: 0;
     z-index: -1;
   }
 
@@ -22,6 +24,91 @@
     .slide {
       &__content {
         padding-top: 2rem;
+
+        &--first {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 5rem;
+          min-height: 20rem;
+          padding-top: 3rem;
+          position: relative;
+
+          .leek {
+            background-image: url('../assets/images/svg/leek.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 9.6875rem;
+            position: absolute;
+            top: -4rem;
+            transform: rotate(-25deg);
+            width: 3.9375rem;
+            z-index: -1;
+          }
+          
+          .plum {
+            background-image: url('../assets/images/svg/plum.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 3.125rem;
+            left: 50%;
+            position: absolute;
+            top: 0;
+            width: 4.0625rem;
+            z-index: -1;
+          }
+          
+          .carrot {
+            background-image: url('../assets/images/svg/carrot.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 11.3125rem;
+            position: absolute;
+            right: 0;
+            top: -4rem;
+            transform: rotate(32deg);
+            width: 3.1875rem;
+            z-index: -1;
+          }
+          
+          .grape {
+            background-image: url('../assets/images/svg/grape.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 7.2rem;
+            position: absolute;
+            right: 0;
+            top: 30%;
+            transform: rotate(22deg);
+            width: 4.0625rem;
+            z-index: -1;
+          }
+          
+          .raspberry {
+            background-image: url('../assets/images/svg/raspberry.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            bottom: 0;
+            height: 3.9875rem;
+            left: 1rem;
+            position: absolute;
+            width: 2.8125rem;
+            z-index: -1;
+          }
+          
+          .quince {
+            background-image: url('../assets/images/svg/quince.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            bottom: 3rem;
+            height: 3.5625rem;
+            position: absolute;
+            right: 0;
+            transform: rotate(-32deg);
+            width: 4.6875rem;
+            z-index: -1;
+          }
+        }
       }
 
       &__header {

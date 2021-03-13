@@ -1,6 +1,7 @@
 import './styles/styles.scss';
 
-import './assets/images/png/succ.png';
+import './assets/images/png/kraut.jpeg';
+import './assets/pdf/Satzung.pdf';
 
 import ctrly from 'ctrly';
 

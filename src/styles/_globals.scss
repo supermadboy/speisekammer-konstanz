@@ -7,11 +7,12 @@ html {
 }
 
 body {
+  background-color: $green-light;
   overflow-x: hidden;
 }
 
 p {
-  font-size: 1.3125rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -42,18 +43,22 @@ h3 {
 .padding-v-m {
   padding: 0 3rem;
 }
+
+.padding-v-l {
+  padding: 0 4.5rem;
+}
     
 /* stylelint-disable */
 .slick-slider {
   .slick-dots {
-    bottom: -35px;
+    bottom: -25px;
   
     li {
-      height: 30px;
-      width: 30px;
+      height: 20px;
+      width: 20px;
   
       button:before {
-        font-size: 30px;
+        font-size: 20px;
       }
   
       &.slick-active {

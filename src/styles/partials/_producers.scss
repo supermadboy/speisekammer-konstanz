@@ -1,13 +1,15 @@
 .producers {
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
+  position: relative;
 
   &__background {
     background-image: url('../assets/images/svg/background.svg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 80%;
+    left: -2.5rem;
     position: absolute;
-    width: 100%;
+    right: 0;
     z-index: -1;
   }
 
@@ -41,7 +43,9 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          min-height: 500px;
+          margin-top: 3rem;
+          min-height: 20rem;
+          padding-top: 3rem;
           position: relative;
           
           .carrot {
@@ -51,21 +55,9 @@
             height: 11.3125rem;
             left: 1.5;
             position: absolute;
-            top: 0;
+            top: -3rem;
             transform: rotate(32deg);
             width: 3.1875rem;
-            z-index: -1;
-          }
-          
-          .plum {
-            background-image: url('../assets/images/svg/plum.svg');
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 3.125rem;
-            left: 50%;
-            position: absolute;
-            top: 4.5rem;
-            width: 4.0625rem;
             z-index: -1;
           }
           
@@ -86,7 +78,7 @@
             background-image: url('../assets/images/svg/raspberry.svg');
             background-repeat: no-repeat;
             background-size: contain;
-            bottom: 4rem;
+            bottom: 0;
             height: 3.9875rem;
             left: 1rem;
             position: absolute;

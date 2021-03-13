@@ -1,4 +1,5 @@
 .footer {
+  padding-top: 3rem;
   position: relative;
 
   &__background {
@@ -6,8 +7,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 80%;
+    left: -2.5rem;
     position: absolute;
-    width: 100%;
+    right: 0;
+    top: 0;
     z-index: -1;
   }
 
@@ -18,7 +21,7 @@
     height: 6rem;
     left: -1rem;
     position: absolute;
-    top: 0;
+    top: 1rem;
     transform: rotate(32deg);
     width: 5rem;
     z-index: -1;
@@ -31,7 +34,7 @@
     height: 7.2rem;
     position: absolute;
     right: 2rem;
-    top: 0;
+    top: 1rem;
     transform: rotate(-10deg);
     width: 4.0625rem;
     z-index: -1;
@@ -44,7 +47,7 @@
     height: 3.9875rem;
     left: 1rem;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: 2.8125rem;
     z-index: -1;
   }
@@ -55,8 +58,8 @@
     background-size: contain;
     height: 5rem;
     position: absolute;
-    right: 2rem;
-    top: 50%;
+    right: 1rem;
+    top: 19.5rem;
     transform: rotate(26deg);
     width: 5rem;
     z-index: -1;
@@ -66,12 +69,25 @@
     background-image: url('../assets/images/svg/carrot.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: 2rem;
+    bottom: 8rem;
     height: 11.3125rem;
     left: 1.5rem;
     position: absolute;
-    transform: rotate(32deg);
+    transform: rotate(-62deg);
     width: 3.1875rem;
+    z-index: -1;
+  }
+
+  &__plum {
+    background-image: url('../assets/images/svg/plum.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 3rem;
+    height: 3.125rem;
+    left: 3rem;
+    position: absolute;
+    transform: rotate(26deg);
+    width: 4.0625rem;
     z-index: -1;
   }
 
@@ -79,7 +95,7 @@
     background-image: url('../assets/images/svg/corn.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: 2rem;
+    bottom: 1rem;
     height: 8rem;
     position: absolute;
     right: -2rem;
@@ -91,6 +107,7 @@
   &__newsletter {
     &-title {
       margin-bottom: 3rem;
+      margin-top: 2rem;
     }
 
     &-text {
@@ -101,9 +118,11 @@
       align-items: center;
       display: flex;
       flex-direction: column;
-      margin-bottom: 8rem;
+      margin-bottom: 3rem;
+      position: relative;
 
       input {
+        background-color: $green-light;
         border-color: $black;
         border-radius: 3rem;
         height: 3rem;
@@ -112,7 +131,25 @@
         width: calc(100% - 6rem);
       }
 
+      &::after {
+        background-image: url('../assets/images/svg/typo.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        display: block;
+        height: 1.5rem;
+        margin-right: 0.3rem;
+        position: absolute;
+        right: 2.5rem;
+        top: 0.9rem;
+        width: 1.5rem;
+      }
+
       button {
+        background-color: $green-light;
+        border: 2px solid $black;
+        border-radius: 1rem;
+        padding: 0.2rem;
         width: 6rem;
       }
     }
@@ -125,7 +162,7 @@
 
   &__mail {
     display: flex;
-    margin-bottom: 6rem;
+    margin: 6rem 0 6rem 1.5rem;
 
     &::before {
       background-image: url('../assets/images/svg/mail.svg');
@@ -133,14 +170,15 @@
       background-size: contain;
       content: '';
       display: block;
-      height: 2rem;
-      margin-right: 0.5rem;
-      width: 2rem;
+      height: 1.5rem;
+      margin-right: 0.3rem;
+      width: 1.5rem;
     }
 
     a {
       color: $black;
       text-decoration: none;
+      white-space: nowrap;
     }
   }
 
@@ -148,10 +186,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 1rem;
 
     a {
       color: $black;
-      text-decoration: none; 
+      text-decoration: none;
+      vertical-align: sub;
     }
 
     .socialmedia {
@@ -162,9 +202,9 @@
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
-        height: 2rem;
+        height: 1.5rem;
         margin-right: 1rem;
-        width: 2rem;
+        width: 1.5rem;
       }
   
       &__instagram {
@@ -172,8 +212,8 @@
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
-        height: 2rem;
-        width: 2rem;
+        height: 1.5rem;
+        width: 1.5rem;
       }
     }
   }

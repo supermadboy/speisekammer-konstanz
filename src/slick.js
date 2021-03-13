@@ -6,9 +6,10 @@ import 'slick-carousel/slick/slick-theme.css';
 
 $('.landing__slider').not('.slick-initialized').slick({
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3000,
   speed: 800,
   arrows: false,
+  dots: true,
 });
 
 $('.steps__slider').not('.slick-initialized').slick({

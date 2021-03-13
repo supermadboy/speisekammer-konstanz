@@ -1,13 +1,16 @@
 .steps {
+  margin-top: 4rem;
   padding-bottom: 4rem;
+  position: relative;
 
   &__background {
     background-image: url('../assets/images/svg/background.svg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 80%;
+    left: -2.5rem;
     position: absolute;
-    width: 100%;
+    right: 0;
     z-index: -1;
   }
 
@@ -20,7 +23,7 @@
     margin-top: 2rem;
 
     a {
-      color: $black;
+      color: $green-dark;
       font-weight: bold;
       text-decoration: none;
     }
@@ -66,11 +69,13 @@
 
       &-a {
         left: -2rem;
+        top: 2rem;
         transform: rotate(-45deg);
       }
 
       &-b {
         right: -2rem;
+        top: 2rem;
         transform: rotate(-25deg);
       }
 
