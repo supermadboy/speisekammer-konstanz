@@ -28,6 +28,10 @@ module.exports = {
       filename: 'index.html',
       template: 'src/views/layouts/index.hbs',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'impressum/index.html',
+      template: 'src/views/layouts/impressum.hbs',
+    }),
     new MiniCssExtractPlugin(),
     new CopyPlugin({
       patterns: [

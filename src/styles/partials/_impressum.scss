@@ -1,0 +1,16 @@
+.impressum {
+  &__home {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    margin-top: 9rem;
+  }
+
+  .landing__logo {
+    z-index: 0;
+  }
+}
