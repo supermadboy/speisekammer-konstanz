@@ -24,6 +24,44 @@
     .slide {
       &__content {
         padding-top: 2rem;
+        position: relative;
+
+        .plum1 {
+          background-image: url('../assets/images/svg/plum.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          bottom: 2.5rem;
+          height: 3.125rem;
+          left: 0;
+          position: absolute;
+          transform: rotate(32deg);
+          width: 4.0625rem;
+          z-index: -1;
+        }
+          
+        .raspberry1 {
+          background-image: url('../assets/images/svg/raspberry.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 3.9875rem;
+          position: absolute;
+          right: 2rem;
+          top: 4rem;
+          width: 2.8125rem;
+          z-index: -1;
+        }
+
+        .corn {
+          background-image: url('../assets/images/svg/corn.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 8rem;
+          position: absolute;
+          right: 3rem;
+          transform: rotate(50deg);
+          width: 4rem;
+          z-index: -1;
+        }
 
         &--first {
           display: flex;
