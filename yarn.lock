@@ -1670,6 +1670,11 @@ csso@^4.0.2:
   dependencies:
     css-tree "^1.1.2"
 
+ctrly@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/ctrly/-/ctrly-0.7.0.tgz#bb239df11e71ddac429f0468de2ae80d57605f26"
+  integrity sha512-l1Yr9ZyzX67CtH607UI0hWfgwakXaVvB39t4CMySzm3D1Z9a6IC/k0cFJ/AvfEUN/auxnbkeiQNhBT0DmojNFQ==
+
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"

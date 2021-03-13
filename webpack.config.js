@@ -26,11 +26,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/views/layouts/index.hbs',
+      template: 'src/views/layouts/index.hbs'
     }),
     new HtmlWebpackPlugin({
       filename: 'impressum/index.html',
-      template: 'src/views/layouts/impressum.hbs',
+      template: 'src/views/layouts/impressum.hbs'
     }),
     new MiniCssExtractPlugin(),
     new CopyPlugin({

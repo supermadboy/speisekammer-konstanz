@@ -2,6 +2,8 @@ import './styles/styles.scss';
 
 import './assets/images/png/succ.png';
 
+import ctrly from 'ctrly';
+
 function getCurrentSeason () {
   var currentDate = new Date();
 
@@ -26,6 +28,10 @@ function getCurrentSeason () {
       return 'summer';
   }
 }
+
+var { closeAll } = ctrly();
+var sidebarCloseButton = document.getElementById('sidebar-close-button');
+sidebarCloseButton.onclick = closeAll;
 
 document.addEventListener('DOMContentLoaded', () => {
   var logo = document.getElementsByClassName('landing__logo')[0];
