@@ -1,16 +1,16 @@
 .footer {
-  padding-top: 3rem;
+  padding-top: 2rem;
   position: relative;
 
   &__background {
     background-image: url('../assets/images/svg/background.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80%;
+    height: calc(100% + 10rem);
     left: -2.5rem;
     position: absolute;
     right: 0;
-    top: 0;
+    top: -10rem;
     z-index: -1;
   }
 
@@ -21,7 +21,7 @@
     height: 6rem;
     left: -1rem;
     position: absolute;
-    top: 1rem;
+    top: -19rem;
     transform: rotate(32deg);
     width: 5rem;
     z-index: -1;
@@ -34,7 +34,7 @@
     height: 7.2rem;
     position: absolute;
     right: 2rem;
-    top: 1rem;
+    top: -19rem;
     transform: rotate(-10deg);
     width: 4.0625rem;
     z-index: -1;
@@ -47,7 +47,7 @@
     height: 3.9875rem;
     left: 1rem;
     position: absolute;
-    top: 40%;
+    top: -1.5rem;
     width: 2.8125rem;
     z-index: -1;
   }
@@ -59,7 +59,7 @@
     height: 5rem;
     position: absolute;
     right: 1rem;
-    top: 19.5rem;
+    top: 9.5rem;
     transform: rotate(26deg);
     width: 5rem;
     z-index: -1;
@@ -102,63 +102,6 @@
     transform: rotate(-33deg);
     width: 4rem;
     z-index: -1;
-  }
-
-  &__newsletter {
-    &-title {
-      margin-bottom: 3rem;
-      margin-top: 2rem;
-    }
-
-    &-text {
-      margin-bottom: 2rem;
-    }
-
-    &-input {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 3rem;
-      position: relative;
-
-      input {
-        background-color: $green-light;
-        border-color: $black;
-        border-radius: 3rem;
-        height: 3rem;
-        margin: 0 1.5rem 1rem;
-        padding: 0 1.5rem;
-        width: calc(100% - 6rem);
-      }
-
-      &::after {
-        background-image: url('../assets/images/svg/typo.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        content: '';
-        display: block;
-        height: 1.5rem;
-        margin-right: 0.3rem;
-        position: absolute;
-        right: 2.5rem;
-        top: 0.9rem;
-        width: 1.5rem;
-      }
-
-      button {
-        background-color: $green-light;
-        border: 2px solid $black;
-        border-radius: 2rem;
-        font-weight: bold;
-        padding: 0.5rem;
-        width: 8rem;
-      }
-    }
-
-    &-subtitle {
-      margin-bottom: 1rem;
-      text-align: center;
-    }
   }
 
   &__mail {

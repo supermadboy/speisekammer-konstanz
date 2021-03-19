@@ -32,6 +32,62 @@
     }
   }
 
+  &__newsletter {
+    &-title {
+      margin-bottom: 3rem;
+      margin-top: 4rem;
+    }
+
+    &-text {
+      margin-bottom: 2rem;
+    }
+
+    &-input {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      input {
+        background-color: $green-light;
+        border-color: $black;
+        border-radius: 3rem;
+        height: 3rem;
+        margin: 0 1.5rem 1rem;
+        padding: 0 1.5rem;
+        width: calc(100% - 6rem);
+      }
+
+      &::after {
+        background-image: url('../assets/images/svg/typo.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        display: block;
+        height: 1.5rem;
+        margin-right: 0.3rem;
+        position: absolute;
+        right: 2.5rem;
+        top: 0.9rem;
+        width: 1.5rem;
+      }
+
+      button {
+        background-color: $green-light;
+        border: 2px solid $black;
+        border-radius: 2rem;
+        font-weight: bold;
+        padding: 0.5rem;
+        width: 8rem;
+      }
+    }
+
+    &-subtitle {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
+
   &__slider {
     padding-top: 4rem;
 
