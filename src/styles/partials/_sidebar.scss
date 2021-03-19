@@ -3,6 +3,16 @@
   width: 100%;
   z-index: 1;
 
+  a {
+    color: $black;
+    padding: 0 1rem 2rem;
+    text-decoration: none;
+
+    @media (min-width: $desktop-breakpoint) {
+      padding-bottom: 0;
+    }
+  }
+
   &__overlay {
     background-color: #ffffff8f;
     display: block;
@@ -32,6 +42,10 @@
     background-image: url('../assets/images/svg/menu.svg');
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: $desktop-breakpoint) {
+      display: none;
+    }
   }
 
   &__content {
@@ -46,18 +60,22 @@
     top: 0;
     width: 60%;
 
-    a {
-      color: $black;
-      padding: 0 1rem 2rem;
-      text-decoration: none;
-    }
-
     .close {
       background-color: transparent;
       background-image: url('../assets/images/svg/close.svg');
       background-repeat: no-repeat;
       background-size: contain;
       outline: none;
+    }
+  }
+
+  &__desktop {
+    display: none;
+    flex-direction: row-reverse;
+    padding: 1rem 0;
+
+    @media (min-width: $desktop-breakpoint) {
+      display: flex;
     }
   }
 }
