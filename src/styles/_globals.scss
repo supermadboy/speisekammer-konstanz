@@ -2,6 +2,8 @@
   font-family: 'authentic-sans', Arial, Helvetica, sans-serif;
 }
 
+$desktop-breakpoint: 992px;
+
 html {
   overflow-x: hidden;
 }
@@ -47,7 +49,7 @@ h3 {
 .padding-v-l {
   padding: 0 4.5rem;
 }
-    
+
 /* stylelint-disable */
 .slick-slider {
   .slick-dots {

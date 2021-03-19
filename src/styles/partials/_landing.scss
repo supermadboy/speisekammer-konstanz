@@ -1,9 +1,24 @@
 .landing {
   position: relative;
 
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  &__front {
+    
+  }
+
   &__header {
     padding-bottom: 2rem;
     padding-top: 9rem;
+
+    @media (min-width: $desktop-breakpoint) {
+      padding-top: 0;
+    }
   }
 
   &__subheader {
@@ -12,6 +27,10 @@
 
   &__subheadertext {
     padding-bottom: 8rem;
+
+    @media (min-width: $desktop-breakpoint) {
+      padding-bottom: 0;
+    }
   }
 
   &__slider {
@@ -24,6 +43,10 @@
         align-items: center;
         display: flex;
         min-height: 18rem;
+
+        @media (min-width: $desktop-breakpoint) {
+          min-height: 0;
+        }
       }
     }
   }
