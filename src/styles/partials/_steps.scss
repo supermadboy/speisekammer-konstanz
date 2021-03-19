@@ -3,6 +3,13 @@
   padding-bottom: 4rem;
   position: relative;
 
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+    margin-top: 0;
+  }
+
   &__background {
     background-image: url('../assets/images/svg/background.svg');
     background-repeat: no-repeat;
@@ -31,6 +38,10 @@
 
   &__slider {
     padding-top: 4rem;
+
+    @media (min-width: $desktop-breakpoint) {
+      width: 50%;
+    }
 
     .slide {
       position: relative;
