@@ -2,6 +2,10 @@
   padding-bottom: 3rem;
   position: relative;
 
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+  }
+
   &__background {
     background-image: url('../assets/images/svg/background.svg');
     background-repeat: no-repeat;
@@ -11,6 +15,10 @@
     position: absolute;
     right: 0;
     z-index: -1;
+
+    @media (min-width: $desktop-breakpoint) {
+      width: 60%;
+    }
   }
 
   &__about {
@@ -90,6 +98,10 @@
 
   &__slider {
     padding-top: 4rem;
+
+    @media (min-width: $desktop-breakpoint) {
+      width: 50%;
+    }
 
     .slide {
       &__content {
