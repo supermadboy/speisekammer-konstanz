@@ -80,14 +80,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.svg/,
-        use: {
-          loader: 'svg-url-loader',
-          options: {},
-        },
-      },
-      {
-        test: /\.(png|jpe?g|gif|pdf)$/i,
+        test: /\.(png|jpe?g|gif|pdf|svg)$/i,
         use: [
           {
             loader: 'file-loader',
