@@ -125,7 +125,8 @@
 
   &__mail {
     display: flex;
-    margin: 6rem 0 6rem 1.5rem;
+    justify-content: center;
+    margin: 6rem 0;
 
     @media (min-width: $desktop-breakpoint) {
       justify-content: center;

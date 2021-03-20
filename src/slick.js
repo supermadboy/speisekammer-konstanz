@@ -4,28 +4,30 @@ import 'slick-carousel';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-$('.landing__slider').not('.slick-initialized').slick({
+var automaticSlider = {
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 4000,
   speed: 800,
   arrows: false,
-  dots: true,
-});
+  dots: false,
+}
 
-$('.steps__slider').not('.slick-initialized').slick({
+let manualSlider = {
+  autoplay: true,
+  autoplaySpeed: 10000,
   speed: 800,
   arrows: false,
   dots: true,
-});
+}
 
-$('.participate__slider').not('.slick-initialized').slick({
-  speed: 800,
-  arrows: false,
-  dots: true,
-});
+$('.landing__slider').not('.slick-initialized').slick(automaticSlider);
 
-$('.producers__slider').not('.slick-initialized').slick({
-  speed: 800,
-  arrows: false,
-  dots: true,
-});
+$('.steps__slider').not('.slick-initialized').slick(manualSlider);
+
+$('.steps__slider-2').not('.slick-initialized').slick(automaticSlider);
+
+$('.participate__slider').not('.slick-initialized').slick(manualSlider);
+
+$('.producers__slider').not('.slick-initialized').slick(manualSlider);
+
+$('.producers__slider-2').not('.slick-initialized').slick(automaticSlider);

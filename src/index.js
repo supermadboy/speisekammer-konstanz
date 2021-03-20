@@ -31,8 +31,14 @@ function getCurrentSeason () {
 }
 
 var { closeAll } = ctrly();
-var sidebarCloseButton = document.getElementById('sidebar-close-button');
-sidebarCloseButton.onclick = closeAll;
+
+var sidebarMobileContent = document.getElementById('sidebar-mobile-content');
+
+for (let child of sidebarMobileContent.children) {
+  if (child) {
+    child.onclick = closeAll;
+  }
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   var logo = document.getElementsByClassName('landing__logo')[0];
