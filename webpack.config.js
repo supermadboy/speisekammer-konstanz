@@ -32,6 +32,10 @@ module.exports = {
       filename: 'impressum/index.html',
       template: 'src/views/layouts/impressum.hbs'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'unsubscribe/index.html',
+      template: 'src/views/layouts/unsubscribe.hbs'
+    }),
     new MiniCssExtractPlugin(),
     new CopyPlugin({
       patterns: [

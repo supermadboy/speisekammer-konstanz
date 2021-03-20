@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Speisekammer Konstanz – Impressum</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Auf dieser Seite kann man sich von dem aktuellen Newsletter
+    der speisekammer Konstanz abmelden. Man bekommt etwa einmal alle 6 Wochen eine E-Mail von der
+    Mailingliste">
+  </head>
+  <body>
+    {{> sidebar}}
+    <div class="unsubscribe">
+      <div class="landing__logo spring" >
+        <a class="impressum__home" href="/"></a>
+      </div>
+
+      <p class="bold text-center impressum__title"></p>
+
+      <div class="unsubscribe__body padding-v-s">
+        <form action="https://ml.kundenserver.de/cgi-bin/mailinglist.cgi" method="POST" target="_blank">
+        <input class="hidden" name="subscribe_r" type="radio" value="subscribe">
+        <br />
+        <input class="hidden" name="subscribe_r" type="radio" value="unsubscribe" checked>
+        Hiermit melden sie sich von der Mailingliste newsletter@speisekammer-konstanz.de ab.
+        <br />
+        Geben Sie Ihre E-Mail-Adresse ein:
+        <br />
+        <input maxlength="51" name="mailaccount_r" size="51" type="text">
+        <br />
+        Wiederholen Sie die eingegebene E-Mail-Adresse:
+        <br />
+        <input maxlength="51" name="mailaccount2_r" size="51" type="text">
+        <br />
+        <input type="SUBMIT" value="Absenden">
+        <br />
+        <input class="hidden" type="RESET" value="Zurücksetzen">
+        <input name="FBMLNAME" type="hidden" value="newsletter@speisekammer-konstanz.de">
+        <br />
+        <input name="FBLANG" type="hidden" value="de">
+        <br />
+        <input name="FBURLERROR_L" type="hidden" value="https://ml.kundenserver.de/mailinglist/error.de.html">
+        <br />
+        <input name="FBURLSUBSCRIBE_L" type="hidden" value="https://ml.kundenserver.de/mailinglist/subscribe.de.html">
+        <br />
+        <input name="FBURLUNSUBSCRIBE_L" type="hidden" value="https://ml.kundenserver.de/mailinglist/unsubscribe.de.html">
+        <br />
+        <input name="FBURLINVALID_L" type="hidden" value="https://ml.kundenserver.de/mailinglist/invalid.de.html">
+      </form>
+          
+      </div>
+    </div>
+  </body>
+</html>
