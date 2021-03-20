@@ -136,9 +136,14 @@
       }
 
       &-c {
-        left: -2rem;
-        top: 30%;
-        transform: rotate(45deg);
+        display: none;
+
+        @media (min-width: $desktop-breakpoint) {
+          bottom: 0;
+          display: block;
+          right: 1rem;
+          transform: rotate(-59deg);
+        }
       }
 
       &-d {

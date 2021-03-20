@@ -82,6 +82,11 @@
     top: 1.25rem;
     width: 4.375rem;
 
+    @media (min-width: $desktop-breakpoint) {
+      height: 9.375em;
+      width: 6.5625rem;
+    }
+
     &.spring {
       background-image: url('../assets/images/svg/logo_spring.svg');
     }
@@ -109,6 +114,12 @@
     top: 2.5rem;
     width: 4.0625rem;
     z-index: -1;
+
+    @media (min-width: $desktop-breakpoint) {
+      height: 4.0625rem;
+      top: 4rem;
+      width: 5.2813rem;
+    }
   }
 
   &__grape {
@@ -122,6 +133,13 @@
     transform: rotate(22deg);
     width: 4.0625rem;
     z-index: -1;
+
+    @media (min-width: $desktop-breakpoint) {
+      height: 9.36rem;
+      right: 8rem;
+      top: 8rem;
+      width: 5.2813rem;
+    }
   }
 
   &__raspberry {
@@ -135,6 +153,13 @@
     transform: rotate(-32deg);
     width: 2.8125rem;
     z-index: -1;
+
+    @media (min-width: $desktop-breakpoint) {
+      height: 5.1838rem;
+      left: 8rem;
+      top: 16rem;
+      width: 3.6563rem;
+    }
   }
 
   &__quince {
@@ -143,11 +168,18 @@
     background-size: contain;
     height: 3.5625rem;
     position: absolute;
-    right: -3rem;
+    right: -2rem;
     top: 18rem;
     transform: rotate(-32deg);
     width: 4.6875rem;
     z-index: -1;
+
+    @media (min-width: $desktop-breakpoint) {
+      height: 4.63125rem;
+      right: 5rem;
+      top: 40%;
+      width: 6.0938rem;
+    }
   }
 
   &__carrot {
@@ -161,6 +193,14 @@
     transform: rotate(109deg);
     width: 3.1875rem;
     z-index: -1;
+
+    @media (min-width: $desktop-breakpoint) {
+      bottom: 7rem;
+      height: 14.7063rem;
+      left: 8rem;
+      top: auto;
+      width: 4.1438rem;
+    }
   }
 
   &__leek {
@@ -174,5 +214,13 @@
     transform: rotate(-55deg);
     width: 3.9375rem;
     z-index: -1;
+
+    @media (min-width: $desktop-breakpoint) {
+      bottom: 3rem;
+      height: 12.5938rem;
+      right: 8rem;
+      top: auto;
+      width: 5.1188rem;
+    }
   }
 }

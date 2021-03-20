@@ -154,6 +154,11 @@
             transform: rotate(32deg);
             width: 3.1875rem;
             z-index: -1;
+
+            @media (min-width: $desktop-breakpoint) {
+              height: 14.7063rem;
+              width: 4.1438rem;
+            }
           }
           
           .grape {
@@ -167,6 +172,11 @@
             transform: rotate(22deg);
             width: 4.0625rem;
             z-index: -1;
+
+            @media (min-width: $desktop-breakpoint) {
+              height: 9.36rem;
+              width: 5.2813rem;
+            }
           }
           
           .raspberry {
@@ -179,6 +189,11 @@
             position: absolute;
             width: 2.8125rem;
             z-index: -1;
+
+            @media (min-width: $desktop-breakpoint) {
+              height: 5.1838rem;
+              width: 3.6563rem;
+            }
           }
           
           .quince {
@@ -192,6 +207,11 @@
             transform: rotate(-32deg);
             width: 4.6875rem;
             z-index: -1;
+
+            @media (min-width: $desktop-breakpoint) {
+              height: 4.63125rem;
+              width: 6.0938rem;
+            }
           }
         }
       }

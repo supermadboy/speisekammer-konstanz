@@ -42,7 +42,10 @@
     z-index: -1;
 
     @media (min-width: $desktop-breakpoint) {
-      top: 0;
+      height: 7.8rem;
+      left: 50%;
+      top: 3rem;
+      width: 6.5rem;
     }
   }
 
@@ -59,7 +62,9 @@
     z-index: -1;
 
     @media (min-width: $desktop-breakpoint) {
-      top: 0;
+      height: 9.36rem;
+      top: 4rem;
+      width: 5.2813rem;
     }
   }
 
@@ -75,7 +80,9 @@
     z-index: -1;
 
     @media (min-width: $desktop-breakpoint) {
-      top: 0;
+      height: 5.1838rem;
+      top: 2rem;
+      width: 3.6563rem;
     }
   }
 
@@ -90,6 +97,13 @@
     transform: rotate(26deg);
     width: 5rem;
     z-index: -1;
+
+    @media (min-width: $desktop-breakpoint) {
+      height: 6.5rem;
+      right: 3rem;
+      top: 50%;
+      width: 6.5rem;
+    }
   }
 
   &__carrot {
@@ -103,6 +117,13 @@
     transform: rotate(-62deg);
     width: 3.1875rem;
     z-index: -1;
+
+    @media (min-width: $desktop-breakpoint) {
+      bottom: 5rem;
+      height: 14.7063rem;
+      left: 30%;
+      width: 4.1438rem;
+    }
   }
 
   &__plum {
@@ -116,6 +137,12 @@
     transform: rotate(26deg);
     width: 4.0625rem;
     z-index: -1;
+
+    @media (min-width: $desktop-breakpoint) {
+      bottom: 8rem;
+      height: 4.0625rem;
+      width: 5.2813rem;
+    }
   }
 
   &__corn {
@@ -129,6 +156,13 @@
     transform: rotate(-33deg);
     width: 4rem;
     z-index: -1;
+
+    @media (min-width: $desktop-breakpoint) {
+      bottom: 7rem;
+      height: 10.5rem;
+      right: 5rem;
+      width: 5.2rem;
+    }
   }
 
   &__mail {
