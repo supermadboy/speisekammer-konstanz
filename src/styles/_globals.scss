@@ -22,12 +22,20 @@ h6 {
   font-size: 1.3rem;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 1.5rem;
+  }
 }
 
 h3 {
   font-size: 2rem;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 4rem;
+  }
 }
 
 .bold {
@@ -40,10 +48,22 @@ h3 {
 
 .padding-v-s {
   padding: 0 1.5rem;
+
+  &-desktop {
+    @media (min-width: $desktop-breakpoint) {
+      padding: 0 22rem;
+    }
+  }
 }
 
 .padding-v-m {
   padding: 0 3rem;
+
+  &-desktop {
+    @media (min-width: $desktop-breakpoint) {
+      padding: 0 22rem;
+    }
+  }
 }
 
 .padding-v-l {

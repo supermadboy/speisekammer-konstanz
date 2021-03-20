@@ -57,6 +57,10 @@
   &__newsletter {
     &-title {
       margin-bottom: 3rem;
+
+      @media (min-width: $desktop-breakpoint) {
+        margin-top: 3rem;
+      }
     }
 
     &-text {
@@ -68,6 +72,10 @@
       display: flex;
       flex-direction: column;
       position: relative;
+
+      @media (min-width: $desktop-breakpoint) {
+        margin: 0 5rem;
+      }
 
       input {
         background-color: $green-light;
@@ -106,6 +114,12 @@
     &-subtitle {
       margin-bottom: 1rem;
       text-align: center;
+    }
+  }
+
+  &__slider-2 {
+    @media (min-width: $desktop-breakpoint) {
+      padding: 0 7rem;
     }
   }
 

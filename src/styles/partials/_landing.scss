@@ -37,6 +37,10 @@
   &__slider {
     color: $green-dark;
 
+    @media (min-width: $desktop-breakpoint) {
+      margin-top: 2rem;
+    }
+
     &__content {
 
       > div{

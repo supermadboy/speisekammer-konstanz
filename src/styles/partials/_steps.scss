@@ -5,6 +5,7 @@
   @media (min-width: $desktop-breakpoint) {
     display: flex;
     flex-direction: row-reverse;
+    min-height: 70vh;
     padding-bottom: 0;
   }
 
@@ -19,8 +20,9 @@
     z-index: -1;
 
     @media (min-width: $desktop-breakpoint) {
+      height: 100%;
       left: 50%;
-      width: 50%;
+      width: 60%;
     }
   }
 
@@ -52,6 +54,12 @@
     }
   }
 
+  &__slider-2 {
+    @media (min-width: $desktop-breakpoint) {
+      padding: 0 7rem;
+    }
+  }
+
   &__slider {
 
     @media (min-width: $desktop-breakpoint) {
@@ -79,6 +87,10 @@
 
       &__text {
         margin-bottom: 1rem;
+
+        @media (min-width: $desktop-breakpoint) {
+          padding: 0 7rem;
+        }
       }
     }
 
@@ -105,12 +117,22 @@
         left: -2rem;
         top: 2rem;
         transform: rotate(-45deg);
+
+        @media (min-width: $desktop-breakpoint) {
+          left: 4rem;
+          top: 5rem;
+        }
       }
 
       &-b {
         right: -1.6rem;
         top: 2rem;
         transform: rotate(-30deg);
+
+        @media (min-width: $desktop-breakpoint) {
+          right: 4rem;
+          top: 5rem;
+        }
       }
 
       &-c {
