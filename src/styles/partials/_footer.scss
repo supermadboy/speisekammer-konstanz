@@ -205,6 +205,14 @@
       vertical-align: sub;
     }
 
+    .sites {
+      display: flex;
+
+      &__impressum {
+        margin-right: 1rem;
+      }
+    }
+
     .socialmedia {
       display: flex;
 

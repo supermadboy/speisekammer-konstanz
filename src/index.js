@@ -1,6 +1,7 @@
 import './styles/styles.scss';
 
-import './assets/images/png/Kraut.png';
+import './assets/images/png/kraut.png';
+import './assets/images/png/radieschen.png';
 import './assets/pdf/Satzung.pdf';
 
 import ctrly from 'ctrly';
@@ -16,7 +17,7 @@ function getCurrentSeason () {
     case 3:
     case 4:
     case 5:
-      return 'summer';
+      return 'spring'; //summer
     case 6:
     case 7:
     case 8:
@@ -26,7 +27,7 @@ function getCurrentSeason () {
     case 11:
       return 'winter';
     default:
-      return 'summer';
+      return 'spring';
   }
 }
 
