@@ -2,6 +2,12 @@ import './styles/styles.scss';
 
 import './assets/images/png/kraut.png';
 import './assets/images/png/radieschen.png';
+import './assets/images/haettelihof.jpg';
+import './assets/images/haettelihof_450.jpg';
+import './assets/images/herbasolaris.jpg';
+import './assets/images/herbasolaris_450.jpg';
+import './assets/images/kornschnalle.jpg';
+import './assets/images/kornschnalle_450.jpg';
 import './assets/pdf/Satzung.pdf';
 
 import ctrly from 'ctrly';
