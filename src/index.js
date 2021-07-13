@@ -138,3 +138,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+window.hidePopup = function() {
+  var popup = document.getElementById('popup');
+  
+  popup.classList.add("popup__hidden")
+}

@@ -1,0 +1,39 @@
+.popup {
+  background-color: $green-light;
+  border: 1px solid $black;
+  border-radius: 8px;
+  bottom: 0;
+  margin: 8px;
+  padding: 16px;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+
+
+  @media (min-width: $desktop-breakpoint) {
+    max-width: 600px;
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  &__close {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+  }
+
+  &__title {
+    margin: 8px 0;
+  }
+
+  a {
+    color: $black;
+  }
+}
