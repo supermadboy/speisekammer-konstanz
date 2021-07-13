@@ -10,6 +10,9 @@ import './assets/images/kornschnalle.jpg';
 import './assets/images/kornschnalle_450.jpg';
 import './assets/images/orlivia.jpg';
 import './assets/images/orlivia_450.jpg';
+import './assets/images/kaffee-kooperative.jpg';
+import './assets/images/kaffee-kooperative_450.jpg';
+
 import './assets/pdf/Satzung.pdf';
 
 import ctrly from 'ctrly';
