@@ -4,6 +4,9 @@
   "description": "website for speiskammer-konstanz",
   "author": "markus szarvas",
   "license": "MIT",
+  "browserslist": [
+    "defaults"
+  ],
   "scripts": {
     "start": "webpack serve --host 0.0.0.0",
     "build": "webpack --mode=production"
