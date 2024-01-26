@@ -26,7 +26,7 @@
     "handlebars-loader": "^1.7.1",
     "html-webpack-plugin": "^5.2.0",
     "mini-css-extract-plugin": "^1.3.9",
-    "node-sass": "^5.0.0",
+    "node-sass": "9",
     "postcss-loader": "^5.0.0",
     "postcss-preset-env": "^6.7.0",
     "sass-loader": "^11.0.1",
