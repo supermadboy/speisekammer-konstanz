@@ -14,8 +14,7 @@ import './assets/images/kaffee-kooperative.jpg';
 import './assets/images/kaffee-kooperative_450.jpg';
 
 import './assets/pdf/Satzung.pdf';
-import './assets/pdf/Mitgliederantragsformular.pdf';
-import './assets/pdf/Kautionsvertrag.pdf';
+import './assets/pdf/2023_Mitgliederantragsformular_und_Kautionsvertrag.pdf';
 
 import ctrly from 'ctrly';
 
