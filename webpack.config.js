@@ -1,54 +1,46 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  mode: 'development',
+  mode: "development",
   entry: {
-    index: {
-      import: './src/index.js',
-    },
-    slick: {
-      import: './src/slick.js',
-    },
+    index: { import: "./src/index.js" },
+    slick: { import: "./src/slick.js" },
   },
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    static: path.join(__dirname, "dist"), // <-- war früher "contentBase"
     compress: true,
     port: 9000,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'src/views/layouts/index.hbs'
+      filename: "index.html",
+      template: "src/views/layouts/index.hbs",
     }),
     new HtmlWebpackPlugin({
-      filename: 'impressum/index.html',
-      template: 'src/views/layouts/impressum.hbs'
+      filename: "impressum/index.html",
+      template: "src/views/layouts/impressum.hbs",
     }),
     new HtmlWebpackPlugin({
-      filename: 'unsubscribe/index.html',
-      template: 'src/views/layouts/unsubscribe.hbs'
+      filename: "unsubscribe/index.html",
+      template: "src/views/layouts/unsubscribe.hbs",
     }),
     new MiniCssExtractPlugin(),
     new CopyPlugin({
-      patterns: [
-        { from: "./src/assets/images/favicons", to: "./" },
-      ],
+      patterns: [{ from: "./src/assets/images/favicons", to: "./" }],
     }),
   ],
   optimization: {
     minimize: true,
-    minimizer: [
-      `...`,
-      new CssMinimizerPlugin(),
-    ]
+    minimizer: [`...`, new CssMinimizerPlugin()],
   },
   module: {
     rules: [
@@ -56,51 +48,45 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
+          loader: "babel-loader",
+          options: { presets: ["@babel/preset-env"] },
+        },
       },
       {
         test: /\.(scss|css)$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ],
       },
       {
         test: /\.hbs$/,
         use: [
           {
-            loader: 'handlebars-loader',
+            loader: "handlebars-loader",
             options: {
-              partialDirs: [
-                path.join(__dirname, 'src', 'views', 'partials'),
-              ],
+              partialDirs: [path.join(__dirname, "src", "views", "partials")],
             },
           },
         ],
       },
+      // Bilder & PDFs & SVGs – Asset Modules (kein file-loader mehr nötig)
       {
         test: /\.(png|jpe?g|gif|pdf|svg)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-            }
-          },
-        ],
+        type: "asset/resource",
+        generator: {
+          filename: "[name][ext]",
+        },
       },
+      // Fonts – Asset Modules
       {
-        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts/',
-            },
-          },
-        ],
+        test: /\.(woff2?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[name][ext]",
+        },
       },
     ],
   },
