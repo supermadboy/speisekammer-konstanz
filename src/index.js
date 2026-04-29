@@ -12,9 +12,15 @@ import './assets/images/orlivia.jpg';
 import './assets/images/orlivia_450.jpg';
 import './assets/images/kaffee-kooperative.jpg';
 import './assets/images/kaffee-kooperative_450.jpg';
+import './assets/images/Gasser_Gemüse.jpg';
+import './assets/images/Gasser_Gemüse_450.jpg';
+import './assets/images/Schokofahrt.JPG';
+import './assets/images/Schokofahrt_450.JPG';
 
 import './assets/pdf/Satzung.pdf';
 import './assets/pdf/2023_Mitgliederantragsformular_und_Kautionsvertrag.pdf';
+import './assets/pdf/Kulturkiosk_SEPA-Lastschriftmandat.pdf';
+import './assets/pdf/Mitgliedsantrag_Kulturkiosk.pdf';
 
 import ctrly from 'ctrly';
 
